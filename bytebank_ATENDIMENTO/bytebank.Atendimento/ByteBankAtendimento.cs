@@ -78,6 +78,7 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
         private void EncerrarAplicacao()
         {
             Console.WriteLine("Encerrando a Aplicação");
+            Console.WriteLine("Aperte Qualquer tecla para encerrar a Aplicação");
             Console.ReadKey();
         }
 
