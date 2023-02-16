@@ -8,4 +8,5 @@
 <li>Excessões</li>
 <li>Coleções em C#</li>
 <li>Linq e outros</li>
+<li>Bibliotecas .NET</li>
 </ul>
