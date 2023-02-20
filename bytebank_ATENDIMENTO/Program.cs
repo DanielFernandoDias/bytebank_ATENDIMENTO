@@ -2,6 +2,7 @@
 using bytebank.Modelos.Conta;
 using bytebank_ATENDIMENTO.bytebank.Atendimento;
 using bytebank_ATENDIMENTO.bytebank.Util;
+using byteBank_GeradorChavePix;
 using bytebank_Modelos.bytebank.Modelos.ADM.Utilitario;
 
 #region Exemplos Arrays
@@ -156,21 +157,12 @@ void testaArrayDeContasCorrentes()
 
 Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 
-new ByteBankAtendimento().AtendimentoCliente();
+//new ByteBankAtendimento().AtendimentoCliente();
 
-public class Estagiario : Funcionario
+Console.WriteLine(GeradorPix.GetChavePix());
+
+var listaChaves = GeradorPix.GetChavesPix(5);
+foreach(string i in listaChaves)
 {
-    public Estagiario(double salario, string cpf) : base(salario, cpf)
-    {
-    }
-
-    public override void AumentarSalario()
-    {
-        throw new NotImplementedException();
-    }
-
-    protected override double getBonificacao()
-    {
-        throw new NotImplementedException();
-    }
+    Console.WriteLine(i);
 }
